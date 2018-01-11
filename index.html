@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>skyangle</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut  icon" type="image/x-icon" href="images/fav.ico" media="screen"  />
+</head>
+<body>
+	<div class="container">
+		<div class="player" id="player"></div>
+		<!-- cloud -->
+		<div class="cloud">
+			<div class="cloud_1"></div>
+			<div class="cloud_2"></div>
+			<div class="cloud_3"></div>
+			<div class="cloud_4"></div>
+		</div>
+		<!-- start -->
+		<div class="start tong">
+			<div class="img_logo">
+				<img src="images/logo.png">
+			</div>
+			<div id="text">
+				<p>1. Move the airplane using the arrows keys;</p>
+				<p>2. The timer present the time lapsed;</p>
+				<p>3. The fuel counter show the remain fuel;</p>
+				<p>4. During the flight, the aircraft need to avoid the birds that are presented in the sky. If the airplane hit a bird, the game is over;</p>
+				<p>5. During the flight, the aircraft need to collect fuel and stars in the sky;</p>
+				<p>6. You can pause the game clicking in a button pause, or pressing the space bar. </p>
+				<p>7. Go beyond all limits;</p>
+				<p>Flight in Sky Angel Challenge...</p>
+			</div>
+			<div class="start_but">
+				<button>Start</button>
+			</div>
+		</div>
+		<!-- sett -->
+		<div class="sett">
+			<h1>Suspend</h1>
+			<div class="sett_box jus">
+				<div class="sett_attribute">
+					<p>Music :</p>
+					<p>Font-size :</p>
+				</div>
+				<div class="sett_value">
+					<p><input type="submit" value="on" class="sub_"></p>
+					<p><input type="number" value="20" class="fontNub"></p>
+				</div>
+			</div>
+			<button>Return game</button>
+		</div>
+		<!-- player -->
+		<div class="player_box tong">
+			<!-- switch -->
+			<div class="switch"></div>
+			<!-- star_num -->
+			<div class="star_num">star:0</div>
+			<!-- time -->
+			<div class="time">time: <span class="set_time">00:00</span></div>
+			<!-- throttle -->
+			<div class="throttle"></div>
+			<!-- pointer -->
+			<div class="pointer"></div>
+			<!-- audio_bg -->
+			<audio src="sound/background.mp3" autoplay loop class="bg_audio"></audio>
+			<!-- audio_hit -->
+			<audio src="sound/hit.mp3" class="hit"></audio>
+			<!-- audio_star -->
+			<audio src="sound/star.mp3" class="star_audio"></audio>
+			<!-- finish -->
+			<audio src="sound/finish.mp3" loop class="finish"></audio>
+		</div>
+		<!-- end -->
+		<div class="end tong">
+			<div class="tellName">
+				<h1>Game over</h1>
+				<p class="end_star">star : </p>
+				<p class="end_time">time : </p>
+				<input type="text" placeholder="Please enter your name" required id="user"><br>
+				<button id="sub_user">Continue</button>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list_box">
+				<div class="list_img"></div>
+				<h1>Ranking List</h1>
+				<div id="table">
+					<table>
+						<thead>
+							<tr>
+								<th>Ranking</th>
+								<th>name</th>
+								<th>star</th>
+								<th>time</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<button class="restart">Restart</button>	
+			</div>
+			
+			
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
