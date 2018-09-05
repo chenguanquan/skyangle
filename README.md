@@ -3,4 +3,4 @@
 2、克隆到本地，直接打开index.html文件运行。
 
 3、因为这个游戏的分数记录技术是使用php，json。所以要把该项目放到xampp的htdocs中运行，才可完美体验。
-![]("skyangle/效果图1.png")
+![](skyangle/效果图1.png)
